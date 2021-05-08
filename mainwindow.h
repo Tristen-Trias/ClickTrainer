@@ -2,6 +2,7 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include <QRandomGenerator64>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -20,6 +21,11 @@ private slots:
     void on_goBlue_released();
 
     void on_G1_linkActivated(const QString &link);
+
+    void on_G3_2_linkActivated(const QString &link);
+
+    void on_asd_windowIconTextChanged(const QString &iconText);
+    void updateLabel(const QString text);
 
 private:
     Ui::MainWindow *ui;

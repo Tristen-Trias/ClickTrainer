@@ -70,7 +70,7 @@
        <string>Go to BLue</string>
       </property>
      </widget>
-     <widget class="QWidget" name="">
+     <widget class="QWidget" name="layoutWidget">
       <property name="geometry">
        <rect>
         <x>390</x>
@@ -80,76 +80,8 @@
        </rect>
       </property>
       <layout class="QGridLayout" name="gridLayout">
-       <item row="0" column="0">
-        <widget class="QLabel" name="G1">
-         <property name="text">
-          <string/>
-         </property>
-         <property name="pixmap">
-          <pixmap>assets/circle.png</pixmap>
-         </property>
-         <property name="scaledContents">
-          <bool>true</bool>
-         </property>
-        </widget>
-       </item>
-       <item row="0" column="1">
-        <widget class="QLabel" name="G2">
-         <property name="text">
-          <string/>
-         </property>
-         <property name="pixmap">
-          <pixmap>assets/circle.png</pixmap>
-         </property>
-         <property name="scaledContents">
-          <bool>true</bool>
-         </property>
-        </widget>
-       </item>
-       <item row="0" column="2">
-        <widget class="QLabel" name="G3">
-         <property name="text">
-          <string/>
-         </property>
-         <property name="pixmap">
-          <pixmap>assets/circle.png</pixmap>
-         </property>
-         <property name="scaledContents">
-          <bool>true</bool>
-         </property>
-        </widget>
-       </item>
-       <item row="0" column="3">
-        <widget class="QLabel" name="G4">
-         <property name="text">
-          <string/>
-         </property>
-         <property name="pixmap">
-          <pixmap>assets/circle.png</pixmap>
-         </property>
-         <property name="scaledContents">
-          <bool>true</bool>
-         </property>
-        </widget>
-       </item>
-       <item row="1" column="0">
-        <widget class="QLabel" name="G5">
-         <property name="enabled">
-          <bool>true</bool>
-         </property>
-         <property name="text">
-          <string/>
-         </property>
-         <property name="pixmap">
-          <pixmap>assets/circle.png</pixmap>
-         </property>
-         <property name="scaledContents">
-          <bool>true</bool>
-         </property>
-        </widget>
-       </item>
-       <item row="1" column="1">
-        <widget class="QLabel" name="G6">
+       <item row="2" column="1">
+        <widget class="QLabel" name="G10">
          <property name="text">
           <string/>
          </property>
@@ -177,60 +109,21 @@
          </property>
         </widget>
        </item>
-       <item row="1" column="3">
-        <widget class="QLabel" name="label_13">
-         <property name="text">
-          <string/>
-         </property>
-         <property name="pixmap">
-          <pixmap>assets/circle.png</pixmap>
-         </property>
-         <property name="scaledContents">
-          <bool>true</bool>
-         </property>
-        </widget>
-       </item>
-       <item row="2" column="0">
-        <widget class="QLabel" name="G9">
-         <property name="text">
-          <string/>
-         </property>
-         <property name="pixmap">
-          <pixmap>assets/circle.png</pixmap>
-         </property>
-         <property name="scaledContents">
-          <bool>true</bool>
-         </property>
-        </widget>
-       </item>
-       <item row="2" column="1">
-        <widget class="QLabel" name="G10">
-         <property name="text">
-          <string/>
-         </property>
-         <property name="pixmap">
-          <pixmap>assets/circle.png</pixmap>
-         </property>
-         <property name="scaledContents">
-          <bool>true</bool>
-         </property>
-        </widget>
-       </item>
-       <item row="2" column="2">
-        <widget class="QLabel" name="G11">
-         <property name="text">
-          <string/>
-         </property>
-         <property name="pixmap">
-          <pixmap>assets/circle.png</pixmap>
-         </property>
-         <property name="scaledContents">
-          <bool>true</bool>
-         </property>
-        </widget>
-       </item>
        <item row="2" column="3">
         <widget class="QLabel" name="G12">
+         <property name="text">
+          <string/>
+         </property>
+         <property name="pixmap">
+          <pixmap>assets/circle.png</pixmap>
+         </property>
+         <property name="scaledContents">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QLabel" name="G6">
          <property name="text">
           <string/>
          </property>
@@ -255,8 +148,102 @@
          </property>
         </widget>
        </item>
+       <item row="3" column="3">
+        <widget class="QLabel" name="G16">
+         <property name="text">
+          <string/>
+         </property>
+         <property name="pixmap">
+          <pixmap>assets/circle.png</pixmap>
+         </property>
+         <property name="scaledContents">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="2">
+        <widget class="QLabel" name="G3">
+         <property name="text">
+          <string/>
+         </property>
+         <property name="pixmap">
+          <pixmap>assets/circle.png</pixmap>
+         </property>
+         <property name="scaledContents">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="3">
+        <widget class="QLabel" name="G8">
+         <property name="text">
+          <string/>
+         </property>
+         <property name="pixmap">
+          <pixmap>assets/circle.png</pixmap>
+         </property>
+         <property name="scaledContents">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QLabel" name="G9">
+         <property name="text">
+          <string/>
+         </property>
+         <property name="pixmap">
+          <pixmap>assets/circle.png</pixmap>
+         </property>
+         <property name="scaledContents">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="G5">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="pixmap">
+          <pixmap>assets/circle.png</pixmap>
+         </property>
+         <property name="scaledContents">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="2">
+        <widget class="QLabel" name="G11">
+         <property name="text">
+          <string/>
+         </property>
+         <property name="pixmap">
+          <pixmap>assets/circle.png</pixmap>
+         </property>
+         <property name="scaledContents">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
        <item row="3" column="1">
         <widget class="QLabel" name="G14">
+         <property name="text">
+          <string/>
+         </property>
+         <property name="pixmap">
+          <pixmap>assets/circle.png</pixmap>
+         </property>
+         <property name="scaledContents">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="3">
+        <widget class="QLabel" name="G4">
          <property name="text">
           <string/>
          </property>
@@ -281,8 +268,27 @@
          </property>
         </widget>
        </item>
-       <item row="3" column="3">
-        <widget class="QLabel" name="G16">
+       <item row="0" column="1">
+        <widget class="QLabel" name="G2">
+         <property name="text">
+          <string/>
+         </property>
+         <property name="pixmap">
+          <pixmap>assets/circle.png</pixmap>
+         </property>
+         <property name="scaledContents">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="0">
+        <widget class="QLabel" name="G1">
+         <property name="mouseTracking">
+          <bool>false</bool>
+         </property>
+         <property name="focusPolicy">
+          <enum>Qt::NoFocus</enum>
+         </property>
          <property name="text">
           <string/>
          </property>
@@ -295,6 +301,19 @@
         </widget>
        </item>
       </layout>
+     </widget>
+     <widget class="QLabel" name="asd">
+      <property name="geometry">
+       <rect>
+        <x>250</x>
+        <y>630</y>
+        <width>91</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>TextLabel</string>
+      </property>
      </widget>
     </widget>
    </widget>
