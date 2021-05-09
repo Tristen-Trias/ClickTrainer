@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1365</width>
-    <height>955</height>
+    <width>1541</width>
+    <height>1029</height>
    </rect>
   </property>
   <property name="minimumSize">
@@ -26,33 +26,110 @@
    <widget class="QStackedWidget" name="stackedWidget">
     <property name="geometry">
      <rect>
-      <x>-120</x>
-      <y>-30</y>
-      <width>1491</width>
-      <height>971</height>
+      <x>-90</x>
+      <y>-10</y>
+      <width>1631</width>
+      <height>1031</height>
      </rect>
     </property>
+    <property name="font">
+     <font>
+      <pointsize>28</pointsize>
+     </font>
+    </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(255, 255, 127);</string>
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
     </property>
     <property name="currentIndex">
-     <number>1</number>
+     <number>2</number>
     </property>
+    <widget class="QWidget" name="menu">
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>630</x>
+        <y>250</y>
+        <width>381</width>
+        <height>151</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Bahnschrift Light</family>
+        <pointsize>48</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Click Trainer</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="grid">
+      <property name="geometry">
+       <rect>
+        <x>720</x>
+        <y>490</y>
+        <width>141</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgba(46, 204, 113, 1); </string>
+      </property>
+      <property name="text">
+       <string>Grid</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="reac">
+      <property name="geometry">
+       <rect>
+        <x>720</x>
+        <y>430</y>
+        <width>141</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgba(46, 204, 113, 1); </string>
+      </property>
+      <property name="text">
+       <string>Reacton Time</string>
+      </property>
+     </widget>
+    </widget>
     <widget class="QWidget" name="page">
      <property name="styleSheet">
-      <string notr="true">background-color: rgb(0, 85, 255);</string>
+      <string notr="true">background-color: rgb(255, 255, 255);</string>
      </property>
      <widget class="QPushButton" name="goYellow">
       <property name="geometry">
        <rect>
-        <x>300</x>
-        <y>200</y>
+        <x>180</x>
+        <y>60</y>
         <width>75</width>
         <height>23</height>
        </rect>
       </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 37, 37);</string>
+      </property>
       <property name="text">
-       <string>Go to Yellow</string>
+       <string>Back</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="reacButton">
+      <property name="geometry">
+       <rect>
+        <x>1080</x>
+        <y>230</y>
+        <width>81</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+      </property>
+      <property name="text">
+       <string/>
       </property>
      </widget>
     </widget>
@@ -60,259 +137,233 @@
      <widget class="QPushButton" name="goBlue">
       <property name="geometry">
        <rect>
-        <x>220</x>
-        <y>510</y>
+        <x>140</x>
+        <y>40</y>
         <width>75</width>
         <height>23</height>
        </rect>
       </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 37, 37);</string>
+      </property>
       <property name="text">
-       <string>Go to BLue</string>
+       <string>Back</string>
       </property>
      </widget>
      <widget class="QWidget" name="layoutWidget">
       <property name="geometry">
        <rect>
-        <x>390</x>
-        <y>60</y>
-        <width>820</width>
-        <height>820</height>
+        <x>290</x>
+        <y>100</y>
+        <width>1111</width>
+        <height>881</height>
        </rect>
       </property>
-      <layout class="QGridLayout" name="gridLayout">
-       <item row="2" column="1">
-        <widget class="QLabel" name="G10">
-         <property name="text">
-          <string/>
-         </property>
-         <property name="pixmap">
-          <pixmap>assets/circle.png</pixmap>
-         </property>
-         <property name="scaledContents">
-          <bool>true</bool>
-         </property>
-        </widget>
-       </item>
-       <item row="1" column="2">
-        <widget class="QLabel" name="G7">
-         <property name="enabled">
-          <bool>true</bool>
-         </property>
-         <property name="text">
-          <string/>
-         </property>
-         <property name="pixmap">
-          <pixmap>assets/circle.png</pixmap>
-         </property>
-         <property name="scaledContents">
-          <bool>true</bool>
-         </property>
-        </widget>
-       </item>
-       <item row="2" column="3">
-        <widget class="QLabel" name="G12">
-         <property name="text">
-          <string/>
-         </property>
-         <property name="pixmap">
-          <pixmap>assets/circle.png</pixmap>
-         </property>
-         <property name="scaledContents">
-          <bool>true</bool>
-         </property>
-        </widget>
-       </item>
-       <item row="1" column="1">
-        <widget class="QLabel" name="G6">
-         <property name="text">
-          <string/>
-         </property>
-         <property name="pixmap">
-          <pixmap>assets/circle.png</pixmap>
-         </property>
-         <property name="scaledContents">
-          <bool>true</bool>
-         </property>
-        </widget>
-       </item>
-       <item row="3" column="0">
-        <widget class="QLabel" name="G13">
-         <property name="text">
-          <string/>
-         </property>
-         <property name="pixmap">
-          <pixmap>assets/circle.png</pixmap>
-         </property>
-         <property name="scaledContents">
-          <bool>true</bool>
-         </property>
-        </widget>
-       </item>
-       <item row="3" column="3">
-        <widget class="QLabel" name="G16">
-         <property name="text">
-          <string/>
-         </property>
-         <property name="pixmap">
-          <pixmap>assets/circle.png</pixmap>
-         </property>
-         <property name="scaledContents">
-          <bool>true</bool>
-         </property>
-        </widget>
-       </item>
+      <layout class="QGridLayout" name="gridLayout" rowstretch="4,4,4,4" columnstretch="4,4,4,4" rowminimumheight="4,4,4,4" columnminimumwidth="4,4,4,4">
+       <property name="sizeConstraint">
+        <enum>QLayout::SetDefaultConstraint</enum>
+       </property>
+       <property name="spacing">
+        <number>4</number>
+       </property>
        <item row="0" column="2">
-        <widget class="QLabel" name="G3">
-         <property name="text">
-          <string/>
-         </property>
-         <property name="pixmap">
-          <pixmap>assets/circle.png</pixmap>
-         </property>
-         <property name="scaledContents">
-          <bool>true</bool>
-         </property>
-        </widget>
-       </item>
-       <item row="1" column="3">
-        <widget class="QLabel" name="G8">
-         <property name="text">
-          <string/>
-         </property>
-         <property name="pixmap">
-          <pixmap>assets/circle.png</pixmap>
-         </property>
-         <property name="scaledContents">
-          <bool>true</bool>
-         </property>
-        </widget>
-       </item>
-       <item row="2" column="0">
-        <widget class="QLabel" name="G9">
-         <property name="text">
-          <string/>
-         </property>
-         <property name="pixmap">
-          <pixmap>assets/circle.png</pixmap>
-         </property>
-         <property name="scaledContents">
-          <bool>true</bool>
-         </property>
-        </widget>
-       </item>
-       <item row="1" column="0">
-        <widget class="QLabel" name="G5">
-         <property name="enabled">
-          <bool>true</bool>
+        <widget class="QPushButton" name="G3">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
          </property>
          <property name="text">
-          <string/>
-         </property>
-         <property name="pixmap">
-          <pixmap>assets/circle.png</pixmap>
-         </property>
-         <property name="scaledContents">
-          <bool>true</bool>
-         </property>
-        </widget>
-       </item>
-       <item row="2" column="2">
-        <widget class="QLabel" name="G11">
-         <property name="text">
-          <string/>
-         </property>
-         <property name="pixmap">
-          <pixmap>assets/circle.png</pixmap>
-         </property>
-         <property name="scaledContents">
-          <bool>true</bool>
-         </property>
-        </widget>
-       </item>
-       <item row="3" column="1">
-        <widget class="QLabel" name="G14">
-         <property name="text">
-          <string/>
-         </property>
-         <property name="pixmap">
-          <pixmap>assets/circle.png</pixmap>
-         </property>
-         <property name="scaledContents">
-          <bool>true</bool>
-         </property>
-        </widget>
-       </item>
-       <item row="0" column="3">
-        <widget class="QLabel" name="G4">
-         <property name="text">
-          <string/>
-         </property>
-         <property name="pixmap">
-          <pixmap>assets/circle.png</pixmap>
-         </property>
-         <property name="scaledContents">
-          <bool>true</bool>
-         </property>
-        </widget>
-       </item>
-       <item row="3" column="2">
-        <widget class="QLabel" name="G15">
-         <property name="text">
-          <string/>
-         </property>
-         <property name="pixmap">
-          <pixmap>assets/circle.png</pixmap>
-         </property>
-         <property name="scaledContents">
-          <bool>true</bool>
+          <string>PushButton</string>
          </property>
         </widget>
        </item>
        <item row="0" column="1">
-        <widget class="QLabel" name="G2">
+        <widget class="QPushButton" name="G2">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+         </property>
          <property name="text">
-          <string/>
+          <string>PushButton</string>
          </property>
-         <property name="pixmap">
-          <pixmap>assets/circle.png</pixmap>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QPushButton" name="G9">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
          </property>
-         <property name="scaledContents">
-          <bool>true</bool>
+         <property name="text">
+          <string>PushButton</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="2">
+        <widget class="QPushButton" name="G7">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+         </property>
+         <property name="text">
+          <string>PushButton</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="2">
+        <widget class="QPushButton" name="G15">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+         </property>
+         <property name="text">
+          <string>PushButton</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QPushButton" name="G5">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+         </property>
+         <property name="text">
+          <string>PushButton</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="0">
+        <widget class="QPushButton" name="G13">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+         </property>
+         <property name="text">
+          <string>PushButton</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="3">
+        <widget class="QPushButton" name="G12">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+         </property>
+         <property name="text">
+          <string>PushButton</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="2">
+        <widget class="QPushButton" name="G11">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+         </property>
+         <property name="text">
+          <string>PushButton</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="3">
+        <widget class="QPushButton" name="G4">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+         </property>
+         <property name="text">
+          <string>PushButton</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QPushButton" name="G6">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+         </property>
+         <property name="text">
+          <string>PushButton</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="QPushButton" name="G10">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+         </property>
+         <property name="text">
+          <string>PushButton</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="3">
+        <widget class="QPushButton" name="G16">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+         </property>
+         <property name="text">
+          <string>PushButton</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="3">
+        <widget class="QPushButton" name="G8">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+         </property>
+         <property name="text">
+          <string>PushButton</string>
          </property>
         </widget>
        </item>
        <item row="0" column="0">
-        <widget class="QLabel" name="G1">
-         <property name="mouseTracking">
-          <bool>false</bool>
-         </property>
-         <property name="focusPolicy">
-          <enum>Qt::NoFocus</enum>
+        <widget class="QPushButton" name="G1">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
          </property>
          <property name="text">
-          <string/>
+          <string>PushButton</string>
          </property>
-         <property name="pixmap">
-          <pixmap>assets/circle.png</pixmap>
+        </widget>
+       </item>
+       <item row="3" column="1">
+        <widget class="QPushButton" name="G14">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
          </property>
-         <property name="scaledContents">
-          <bool>true</bool>
+         <property name="text">
+          <string>PushButton</string>
          </property>
         </widget>
        </item>
       </layout>
      </widget>
-     <widget class="QLabel" name="asd">
+     <widget class="QLabel" name="score">
       <property name="geometry">
        <rect>
-        <x>250</x>
-        <y>630</y>
-        <width>91</width>
-        <height>61</height>
+        <x>450</x>
+        <y>20</y>
+        <width>251</width>
+        <height>71</height>
        </rect>
       </property>
+      <property name="font">
+       <font>
+        <family>Lucida Sans Unicode</family>
+        <pointsize>17</pointsize>
+       </font>
+      </property>
       <property name="text">
-       <string>TextLabel</string>
+       <string>Score: 0</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="time">
+      <property name="geometry">
+       <rect>
+        <x>1170</x>
+        <y>20</y>
+        <width>181</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Lucida Sans Unicode</family>
+        <pointsize>17</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>time</string>
       </property>
      </widget>
     </widget>
@@ -323,7 +374,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1365</width>
+     <width>1541</width>
      <height>21</height>
     </rect>
    </property>
