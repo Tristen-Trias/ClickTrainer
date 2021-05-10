@@ -78,7 +78,6 @@ void MainWindow::setGrid() {
 //End grid gamemode
 
 
-
 //Reaction gamemode
 
 void MainWindow::on_start_released()
@@ -151,6 +150,7 @@ void MainWindow::on_reacButton_released()
 
 
 //Widget Functions
+
 
 void MainWindow::setReacButton(QPushButton* button) {
     const QPixmap pix("F:/Libraries/Documents/UCM/CSE/CSE 165/QT Projects/ClickTrainergit/assets/smallCircle.png");
