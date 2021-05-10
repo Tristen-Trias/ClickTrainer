@@ -29,23 +29,7 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
-void MainWindow::timer60s() {
-    ctime = 60;
-    timer = new QTimer(this);
-    connect(timer, SIGNAL(timeout()), this, SLOT(updateTime()));
-    timer->start(1000);
-}
-
-void MainWindow::updateTime() {
-    ctime--;
-    QString temp = QString::number(ctime);
-    ui->time->setText("Time: " + temp);
-    if (ctime == 0) {
-        temp = QString::number(score);
-        ui->stackedWidget->setCurrentIndex(3);
-        ui->score_3->setText("Score: " + temp);
-    }
-}
+//Grid gamemode
 
 void MainWindow::buttonClicked() {
     QPushButton *btn = qobject_cast<QPushButton *>(sender());
@@ -58,63 +42,6 @@ void MainWindow::buttonClicked() {
         temp->setVisible(true);
     }
 }
-
-void MainWindow::updateScore(int n, int a) {
-    score = n + a;
-    QString temp = QString::number(score);
-    ui->score->setText("Score: " + temp);
-}
-
-void MainWindow::updateScore(int n) {
-    score = n;
-    QString temp = QString::number(score);
-    ui->score->setText("Score: " + temp);
-}
-
-void MainWindow::updateScore() {
-    score += 1;
-    QString temp = QString::number(score);
-    ui->score->setText("Score: " + temp);
-}
-
-void MainWindow::updateTime(int n) {
-    QString temp = QString::number(n);
-    ui->lTime->setText("Last time: " + temp + " ms");
-}
-
-void MainWindow::updateLow(int n) {
-    QString temp = QString::number(n);
-    ui->low->setText("Lowest time: " + temp + " ms");
-}
-
-void MainWindow::updateAvg(int n) {
-    QString temp = QString::number(n);
-    ui->avg->setText("Lowest time: " + temp + " ms");
-}
-
-QPushButton* MainWindow::buttonVisible(QPushButton* btn) {
-    if (!btn->isVisible())
-        return btn;
-    else {
-        btn = randButton();
-        return buttonVisible(btn);
-    }
-}
-
-QPushButton* MainWindow::randButton() {
-    int x, y;
-    x = randNumber4();
-    y = randNumber4();
-
-    QLayoutItem *temp = ui->gridLayout->itemAtPosition(x, y);
-    QPushButton *btn = qobject_cast<QPushButton *>(temp->widget());
-
-    if (btn->isVisible())
-        return randButton();
-
-    return btn;
-}
-
 
 void MainWindow::gridGame() {
     QPushButton* btn;
@@ -150,12 +77,17 @@ void MainWindow::setGrid() {
     updateScore(0);
 }
 
-int MainWindow::randNumber16() {
-    return rand() % 15;
-}
+//End grid gamemode
 
-int MainWindow::randNumber4() {
-    return rand() % 3;
+
+//Reaction gamemode
+
+void MainWindow::on_start_released()
+{
+    start = QTime::currentTime();
+    ui->start->setVisible(false);
+    setRandPos(ui->reacButton);
+    ui->reacButton->setVisible(true);
 }
 
 void MainWindow::setRandPos(QPushButton* btn) {
@@ -178,56 +110,6 @@ void MainWindow::setReac() {
     avg = 0;
     tot = 0;
 
-}
-
-void MainWindow::setButton(QPushButton* button) {
-    const QPixmap pix("F:/Libraries/Documents/UCM/CSE/CSE 165/QT Projects/ClickTrainer/assets/circle.png");
-    QIcon icon(pix);
-
-    button->setFixedSize(icon.actualSize(icon.availableSizes().first()));
-    button->setText("");
-    button->setIcon(icon);
-    button->setIconSize(icon.actualSize(icon.availableSizes().first()));
-}
-
-void MainWindow::on_goYellow_released()
-{
-    ui->stackedWidget->setCurrentIndex(0);
-}
-
-void MainWindow::on_goBlue_released()
-{
-    ui->stackedWidget->setCurrentIndex(0);
-}
-
-void MainWindow::on_goBlue_2_released()
-{
-    ui->stackedWidget->setCurrentIndex(0);
-}
-
-void MainWindow::on_goYellow_2_released()
-{
-    ui->stackedWidget->setCurrentIndex(0);
-}
-
-
-void MainWindow::on_grid_released()
-{
-    ui->stackedWidget->setCurrentIndex(2);
-    gridGame();
-}
-
-void MainWindow::on_reac_released()
-{
-    ui->stackedWidget->setCurrentIndex(1);
-    setReac();
-}
-
-
-
-void MainWindow::updateLabel(const QString text, QLabel* label)
-{
-    label->setText(text);
 }
 
 void MainWindow::on_reacButton_released()
@@ -265,13 +147,144 @@ void MainWindow::on_reacButton_released()
 
 }
 
+//End Reaction Gamemode
 
 
-void MainWindow::on_start_released()
-{
-    start = QTime::currentTime();
-    ui->start->setVisible(false);
-    setRandPos(ui->reacButton);
-    ui->reacButton->setVisible(true);
+
+//Widget Functions
+
+void MainWindow::setButton(QPushButton* button) {
+    const QPixmap pix("F:/Libraries/Documents/UCM/CSE/CSE 165/QT Projects/ClickTrainer/assets/circle.png");
+    QIcon icon(pix);
+
+    button->setFixedSize(icon.actualSize(icon.availableSizes().first()));
+    button->setText("");
+    button->setIcon(icon);
+    button->setIconSize(icon.actualSize(icon.availableSizes().first()));
 }
 
+QPushButton* MainWindow::randButton() {
+    int x, y;
+    x = randNumber4();
+    y = randNumber4();
+
+    QLayoutItem *temp = ui->gridLayout->itemAtPosition(x, y);
+    QPushButton *btn = qobject_cast<QPushButton *>(temp->widget());
+
+    if (btn->isVisible())
+        return randButton();
+
+    return btn;
+}
+
+QPushButton* MainWindow::buttonVisible(QPushButton* btn) {
+    if (!btn->isVisible())
+        return btn;
+    else {
+        btn = randButton();
+        return buttonVisible(btn);
+    }
+}
+
+//End widget functions
+
+
+
+
+
+//Label functions
+
+void MainWindow::updateScore(int n, int a) {
+    score = n + a;
+    QString temp = QString::number(score);
+    ui->score->setText("Score: " + temp);
+}
+
+void MainWindow::updateScore(int n) {
+    score = n;
+    QString temp = QString::number(score);
+    ui->score->setText("Score: " + temp);
+}
+
+void MainWindow::updateScore() {
+    score += 1;
+    QString temp = QString::number(score);
+    ui->score->setText("Score: " + temp);
+}
+
+void MainWindow::updateTime(int n) {
+    QString temp = QString::number(n);
+    ui->lTime->setText("Last time: " + temp + " ms");
+}
+
+void MainWindow::updateLow(int n) {
+    QString temp = QString::number(n);
+    ui->low->setText("Lowest time: " + temp + " ms");
+}
+
+void MainWindow::updateAvg(int n) {
+    QString temp = QString::number(n);
+    ui->avg->setText("Lowest time: " + temp + " ms");
+}
+
+//End label functions
+
+
+
+
+
+//Helper/Menu functions
+
+void MainWindow::timer60s() {
+    ctime = 60;
+    timer = new QTimer(this);
+    connect(timer, SIGNAL(timeout()), this, SLOT(updateTime()));
+    timer->start(1000);
+}
+
+void MainWindow::updateTime() {
+    ctime--;
+    QString temp = QString::number(ctime);
+    ui->time->setText("Time: " + temp);
+    if (ctime == 0) {
+        temp = QString::number(score);
+        ui->stackedWidget->setCurrentIndex(3);
+        ui->score_3->setText("Score: " + temp);
+    }
+}
+
+int MainWindow::randNumber16() {
+    return rand() % 15;
+}
+
+int MainWindow::randNumber4() {
+    return rand() % 3;
+}
+
+void MainWindow::on_goYellow_released() {
+    ui->stackedWidget->setCurrentIndex(0);
+}
+
+void MainWindow::on_goBlue_released() {
+    ui->stackedWidget->setCurrentIndex(0);
+}
+
+void MainWindow::on_goBlue_2_released() {
+    ui->stackedWidget->setCurrentIndex(0);
+}
+
+void MainWindow::on_goYellow_2_released() {
+    ui->stackedWidget->setCurrentIndex(0);
+}
+
+void MainWindow::on_grid_released() {
+    ui->stackedWidget->setCurrentIndex(2);
+    gridGame();
+}
+
+void MainWindow::on_reac_released() {
+    ui->stackedWidget->setCurrentIndex(1);
+    setReac();
+}
+
+//End Helper/Menu functions
