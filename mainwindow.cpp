@@ -20,8 +20,6 @@ MainWindow::MainWindow(QWidget *parent)
 {
     srand(time(0));
     ui->setupUi(this);
-
-    //ui->reacButton->setGeometry();
 }
 
 MainWindow::~MainWindow()
@@ -94,14 +92,14 @@ void MainWindow::setRandPos(QPushButton* btn) {
     int x, y;
 
     //(max - min + 1) - min
-    x = rand() % (1200 - 300 + 1) + 300;
-    y = rand() % (500 - 200 + 1) + 200;
+    x = rand() % (1300 - 200 + 1) + 200;
+    y = rand() % (600 - 100 + 1) + 100;
 
     btn->move(x, y);
 }
 
 void MainWindow::setReac() {
-    setButton(ui->reacButton);
+    setReacButton(ui->reacButton);
     ui->reacButton->setVisible(false);
     ui->start->setVisible(true);
 
@@ -153,8 +151,19 @@ void MainWindow::on_reacButton_released()
 
 //Widget Functions
 
+
+void MainWindow::setReacButton(QPushButton* button) {
+    const QPixmap pix("F:/Libraries/Documents/UCM/CSE/CSE 165/QT Projects/ClickTrainergit/assets/smallCircle.png");
+    QIcon icon(pix);
+
+    button->setFixedSize(icon.actualSize(icon.availableSizes().first()));
+    button->setText("");
+    button->setIcon(icon);
+    button->setIconSize(icon.actualSize(icon.availableSizes().first()));
+}
+
 void MainWindow::setButton(QPushButton* button) {
-    const QPixmap pix("F:/Libraries/Documents/UCM/CSE/CSE 165/QT Projects/ClickTrainer/assets/circle.png");
+    const QPixmap pix("F:/Libraries/Documents/UCM/CSE/CSE 165/QT Projects/ClickTrainergit/assets/circle.png");
     QIcon icon(pix);
 
     button->setFixedSize(icon.actualSize(icon.availableSizes().first()));

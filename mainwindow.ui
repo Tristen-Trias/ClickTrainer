@@ -92,7 +92,7 @@
        <string notr="true">background-color: rgba(46, 204, 113, 1); </string>
       </property>
       <property name="text">
-       <string>Reacton Time</string>
+       <string>Reacton Flick</string>
       </property>
      </widget>
      <widget class="QLabel" name="label_2">
@@ -118,7 +118,7 @@
       <property name="geometry">
        <rect>
         <x>890</x>
-        <y>560</y>
+        <y>550</y>
         <width>631</width>
         <height>71</height>
        </rect>
@@ -267,7 +267,7 @@
         <x>380</x>
         <y>100</y>
         <width>971</width>
-        <height>801</height>
+        <height>814</height>
        </rect>
       </property>
       <layout class="QGridLayout" name="gridLayout" rowstretch="1,1,1,1" columnstretch="1,1,1,1" rowminimumheight="1,1,1,1" columnminimumwidth="1,1,1,1">
@@ -279,6 +279,12 @@
        </property>
        <item row="0" column="2">
         <widget class="QPushButton" name="G3">
+         <property name="minimumSize">
+          <size>
+           <width>200</width>
+           <height>200</height>
+          </size>
+         </property>
          <property name="styleSheet">
           <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
          </property>
@@ -289,6 +295,12 @@
        </item>
        <item row="0" column="1">
         <widget class="QPushButton" name="G2">
+         <property name="minimumSize">
+          <size>
+           <width>200</width>
+           <height>200</height>
+          </size>
+         </property>
          <property name="styleSheet">
           <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
          </property>
@@ -305,6 +317,12 @@
        </item>
        <item row="2" column="0">
         <widget class="QPushButton" name="G9">
+         <property name="minimumSize">
+          <size>
+           <width>200</width>
+           <height>200</height>
+          </size>
+         </property>
          <property name="styleSheet">
           <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
          </property>
@@ -315,6 +333,12 @@
        </item>
        <item row="1" column="2">
         <widget class="QPushButton" name="G7">
+         <property name="minimumSize">
+          <size>
+           <width>200</width>
+           <height>200</height>
+          </size>
+         </property>
          <property name="styleSheet">
           <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
          </property>
@@ -325,6 +349,12 @@
        </item>
        <item row="3" column="2">
         <widget class="QPushButton" name="G15">
+         <property name="minimumSize">
+          <size>
+           <width>200</width>
+           <height>200</height>
+          </size>
+         </property>
          <property name="styleSheet">
           <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
          </property>
@@ -335,6 +365,12 @@
        </item>
        <item row="1" column="0">
         <widget class="QPushButton" name="G5">
+         <property name="minimumSize">
+          <size>
+           <width>200</width>
+           <height>200</height>
+          </size>
+         </property>
          <property name="styleSheet">
           <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
          </property>
@@ -345,6 +381,12 @@
        </item>
        <item row="3" column="0">
         <widget class="QPushButton" name="G13">
+         <property name="minimumSize">
+          <size>
+           <width>200</width>
+           <height>200</height>
+          </size>
+         </property>
          <property name="styleSheet">
           <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
          </property>
@@ -355,6 +397,12 @@
        </item>
        <item row="2" column="3">
         <widget class="QPushButton" name="G12">
+         <property name="minimumSize">
+          <size>
+           <width>200</width>
+           <height>200</height>
+          </size>
+         </property>
          <property name="styleSheet">
           <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
          </property>
@@ -365,6 +413,12 @@
        </item>
        <item row="2" column="2">
         <widget class="QPushButton" name="G11">
+         <property name="minimumSize">
+          <size>
+           <width>200</width>
+           <height>200</height>
+          </size>
+         </property>
          <property name="styleSheet">
           <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
          </property>
@@ -375,6 +429,12 @@
        </item>
        <item row="0" column="3">
         <widget class="QPushButton" name="G4">
+         <property name="minimumSize">
+          <size>
+           <width>200</width>
+           <height>200</height>
+          </size>
+         </property>
          <property name="styleSheet">
           <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
          </property>
@@ -385,6 +445,12 @@
        </item>
        <item row="1" column="1">
         <widget class="QPushButton" name="G6">
+         <property name="minimumSize">
+          <size>
+           <width>200</width>
+           <height>200</height>
+          </size>
+         </property>
          <property name="styleSheet">
           <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
          </property>
@@ -395,6 +461,12 @@
        </item>
        <item row="2" column="1">
         <widget class="QPushButton" name="G10">
+         <property name="minimumSize">
+          <size>
+           <width>200</width>
+           <height>200</height>
+          </size>
+         </property>
          <property name="styleSheet">
           <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
          </property>
@@ -405,6 +477,12 @@
        </item>
        <item row="3" column="3">
         <widget class="QPushButton" name="G16">
+         <property name="minimumSize">
+          <size>
+           <width>200</width>
+           <height>200</height>
+          </size>
+         </property>
          <property name="styleSheet">
           <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
          </property>
@@ -415,6 +493,12 @@
        </item>
        <item row="1" column="3">
         <widget class="QPushButton" name="G8">
+         <property name="minimumSize">
+          <size>
+           <width>200</width>
+           <height>200</height>
+          </size>
+         </property>
          <property name="styleSheet">
           <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
          </property>
@@ -425,6 +509,12 @@
        </item>
        <item row="0" column="0">
         <widget class="QPushButton" name="G1">
+         <property name="minimumSize">
+          <size>
+           <width>200</width>
+           <height>200</height>
+          </size>
+         </property>
          <property name="styleSheet">
           <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
          </property>
@@ -435,6 +525,12 @@
        </item>
        <item row="3" column="1">
         <widget class="QPushButton" name="G14">
+         <property name="minimumSize">
+          <size>
+           <width>200</width>
+           <height>200</height>
+          </size>
+         </property>
          <property name="styleSheet">
           <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
          </property>
