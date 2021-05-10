@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>1541</width>
-    <height>1029</height>
+    <height>1009</height>
    </rect>
   </property>
   <property name="minimumSize">
@@ -26,7 +26,7 @@
    <widget class="QStackedWidget" name="stackedWidget">
     <property name="geometry">
      <rect>
-      <x>-90</x>
+      <x>-80</x>
       <y>-10</y>
       <width>1631</width>
       <height>1031</height>
@@ -41,7 +41,7 @@
      <string notr="true">background-color: rgb(255, 255, 255);</string>
     </property>
     <property name="currentIndex">
-     <number>2</number>
+     <number>0</number>
     </property>
     <widget class="QWidget" name="menu">
      <widget class="QLabel" name="label">
@@ -67,7 +67,7 @@
       <property name="geometry">
        <rect>
         <x>720</x>
-        <y>490</y>
+        <y>560</y>
         <width>141</width>
         <height>51</height>
        </rect>
@@ -95,6 +95,44 @@
        <string>Reacton Time</string>
       </property>
      </widget>
+     <widget class="QLabel" name="label_2">
+      <property name="geometry">
+       <rect>
+        <x>890</x>
+        <y>430</y>
+        <width>631</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Bahnschrift Light</family>
+        <pointsize>22</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt;&quot;&gt;Press the start button and then click the blue circle as fast as you can. &lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt;&quot;&gt;You have 10 tries, and your score will be the average of the 10, along with your lowest time.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt;&quot;&gt;&lt;br/&gt;&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_3">
+      <property name="geometry">
+       <rect>
+        <x>890</x>
+        <y>560</y>
+        <width>631</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Bahnschrift Light</family>
+        <pointsize>22</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt;&quot;&gt;A grid of blue circles will appear. Tap as many as you can within the time limit.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
     </widget>
     <widget class="QWidget" name="page">
      <property name="styleSheet">
@@ -103,8 +141,8 @@
      <widget class="QPushButton" name="goYellow">
       <property name="geometry">
        <rect>
-        <x>180</x>
-        <y>60</y>
+        <x>100</x>
+        <y>20</y>
         <width>75</width>
         <height>23</height>
        </rect>
@@ -119,8 +157,8 @@
      <widget class="QPushButton" name="reacButton">
       <property name="geometry">
        <rect>
-        <x>1080</x>
-        <y>230</y>
+        <x>590</x>
+        <y>340</y>
         <width>81</width>
         <height>71</height>
        </rect>
@@ -130,6 +168,79 @@
       </property>
       <property name="text">
        <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="start">
+      <property name="geometry">
+       <rect>
+        <x>760</x>
+        <y>370</y>
+        <width>81</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgba(0, 255, 0, 1);</string>
+      </property>
+      <property name="text">
+       <string>Press to start</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lTime">
+      <property name="geometry">
+       <rect>
+        <x>1370</x>
+        <y>20</y>
+        <width>251</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Lucida Sans Unicode</family>
+        <pointsize>17</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Last Time: 0</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="low">
+      <property name="geometry">
+       <rect>
+        <x>1370</x>
+        <y>70</y>
+        <width>251</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Lucida Sans Unicode</family>
+        <pointsize>17</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Lowest Time: 0</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="avg">
+      <property name="geometry">
+       <rect>
+        <x>1370</x>
+        <y>120</y>
+        <width>251</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Lucida Sans Unicode</family>
+        <pointsize>17</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Average: 0</string>
       </property>
      </widget>
     </widget>
@@ -153,13 +264,13 @@
      <widget class="QWidget" name="layoutWidget">
       <property name="geometry">
        <rect>
-        <x>290</x>
+        <x>380</x>
         <y>100</y>
-        <width>1111</width>
-        <height>881</height>
+        <width>971</width>
+        <height>801</height>
        </rect>
       </property>
-      <layout class="QGridLayout" name="gridLayout" rowstretch="4,4,4,4" columnstretch="4,4,4,4" rowminimumheight="4,4,4,4" columnminimumwidth="4,4,4,4">
+      <layout class="QGridLayout" name="gridLayout" rowstretch="1,1,1,1" columnstretch="1,1,1,1" rowminimumheight="1,1,1,1" columnminimumwidth="1,1,1,1">
        <property name="sizeConstraint">
         <enum>QLayout::SetDefaultConstraint</enum>
        </property>
@@ -183,6 +294,12 @@
          </property>
          <property name="text">
           <string>PushButton</string>
+         </property>
+         <property name="checkable">
+          <bool>false</bool>
+         </property>
+         <property name="flat">
+          <bool>false</bool>
          </property>
         </widget>
        </item>
@@ -363,7 +480,138 @@
        </font>
       </property>
       <property name="text">
-       <string>time</string>
+       <string>time: 60</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="scoreScreen">
+     <widget class="QPushButton" name="goBlue_2">
+      <property name="geometry">
+       <rect>
+        <x>240</x>
+        <y>90</y>
+        <width>75</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 37, 37);</string>
+      </property>
+      <property name="text">
+       <string>Back</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="score_3">
+      <property name="geometry">
+       <rect>
+        <x>640</x>
+        <y>360</y>
+        <width>251</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Lucida Sans Unicode</family>
+        <pointsize>17</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Score: 0</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="cong">
+      <property name="geometry">
+       <rect>
+        <x>610</x>
+        <y>280</y>
+        <width>251</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Lucida Sans Unicode</family>
+        <pointsize>17</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Congratulation</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_3">
+     <widget class="QPushButton" name="goYellow_2">
+      <property name="geometry">
+       <rect>
+        <x>280</x>
+        <y>130</y>
+        <width>75</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 37, 37);</string>
+      </property>
+      <property name="text">
+       <string>Back</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="scoreAvg">
+      <property name="geometry">
+       <rect>
+        <x>590</x>
+        <y>330</y>
+        <width>251</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Lucida Sans Unicode</family>
+        <pointsize>17</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Average: </string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="scoreLow">
+      <property name="geometry">
+       <rect>
+        <x>590</x>
+        <y>260</y>
+        <width>251</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Lucida Sans Unicode</family>
+        <pointsize>17</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Lowest Time: </string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="cong_2">
+      <property name="geometry">
+       <rect>
+        <x>610</x>
+        <y>170</y>
+        <width>251</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Lucida Sans Unicode</family>
+        <pointsize>17</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Congratulation</string>
       </property>
      </widget>
     </widget>
