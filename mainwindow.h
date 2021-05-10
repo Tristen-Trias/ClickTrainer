@@ -26,7 +26,7 @@ private:
     int score, ctime, count, t, low, avg, tot;
     int times[10];
 
-    //Helper functions
+    //Helper/Menu/Label functions
     int randNumber4();
     int randNumber16();
     void setRandPos(QPushButton *btn);
@@ -37,13 +37,12 @@ private:
     void updateScore();
     void updateTime(int n);
 
-
     //Widget functions
+
     QPushButton* buttonVisible(QPushButton* btn);
     QPushButton* randButton();
     QTimer *timer;
     QTime start, stop;
-
 
 public slots:
     void updateTime();
@@ -63,6 +62,7 @@ private slots:
 
     //Widget Function
     void setButton(QPushButton *button);
+    void setReacButton(QPushButton *button);
 
     //Menu functions
     void on_goYellow_released();
