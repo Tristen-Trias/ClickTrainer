@@ -27,15 +27,16 @@ private:
     int times[10];
 
     //Helper functions
-    int randNumber16();
     int randNumber4();
+    int randNumber16();
     void setRandPos(QPushButton *btn);
+    void updateAvg(int n);
+    void updateLow(int n);
     void updateScore(int n, int a);
     void updateScore(int n);
     void updateScore();
-    void updateLow(int n);
     void updateTime(int n);
-    void updateAvg(int n);
+
 
     //Widget functions
     QPushButton* buttonVisible(QPushButton* btn);
