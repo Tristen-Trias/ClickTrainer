@@ -37,8 +37,8 @@ private:
     void updateScore();
     void updateTime(int n);
 
-    //Widget functions
 
+    //Widget functions
     QPushButton* buttonVisible(QPushButton* btn);
     QPushButton* randButton();
     QTimer *timer;
@@ -63,7 +63,7 @@ private slots:
     //Widget Function
     void setButton(QPushButton *button);
     void setReacButton(QPushButton *button);
-
+    
     //Menu functions
     void on_goYellow_released();
     void on_goBlue_released();
