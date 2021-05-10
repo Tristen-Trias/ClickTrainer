@@ -26,17 +26,19 @@ private:
     int score, ctime, count, t, low, avg, tot;
     int times[10];
 
-    int randNumber16();
+    //Helper functions
     int randNumber4();
-
+    int randNumber16();
     void setRandPos(QPushButton *btn);
+    void updateAvg(int n);
+    void updateLow(int n);
     void updateScore(int n, int a);
     void updateScore(int n);
     void updateScore();
-    void updateLow(int n);
     void updateTime(int n);
-    void updateAvg(int n);
 
+
+    //Widget functions
     QPushButton* buttonVisible(QPushButton* btn);
     QPushButton* randButton();
     QTimer *timer;
@@ -48,21 +50,26 @@ public slots:
     void timer60s();
 
 private slots:
+
+    //Grid gamemode functions
+    void gridGame();
+    void setGrid();
+    void buttonClicked();
+
+    //Reaction Gamemode functions
+    void setReac();
+    void on_start_released();
+    void on_reacButton_released();
+
+    //Widget Function
+    void setButton(QPushButton *button);
+
+    //Menu functions
     void on_goYellow_released();
     void on_goBlue_released();
     void on_grid_released();
     void on_reac_released();
-
-    void updateLabel(const QString text, QLabel* label);
-
-    void gridGame();
-    void setGrid();
-    void setReac();
-    void setButton(QPushButton *button);
-    void buttonClicked();
     void on_goBlue_2_released();
-    void on_reacButton_released();
-    void on_start_released();
     void on_goYellow_2_released();
 };
 #endif // MAINWINDOW_H
