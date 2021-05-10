@@ -224,7 +224,7 @@ void MainWindow::updateLow(int n) {
 
 void MainWindow::updateAvg(int n) {
     QString temp = QString::number(n);
-    ui->avg->setText("Lowest time: " + temp + " ms");
+    ui->avg->setText("Average: " + temp + " ms");
 }
 
 //End label functions
