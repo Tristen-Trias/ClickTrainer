@@ -78,6 +78,7 @@ void MainWindow::setGrid() {
 //End grid gamemode
 
 
+
 //Reaction gamemode
 
 void MainWindow::on_start_released()
